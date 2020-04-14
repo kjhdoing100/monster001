@@ -1721,6 +1721,7 @@ while True:
 				ouput_bossData = []
 				aa = []
 				fixed_datelist = []
+				nm =[]
 				
 				for i in range(bossNum):
 					if bossMungFlag[i] == True :
@@ -1735,19 +1736,27 @@ while True:
 						temp_bossTime1.append(bossData[i][0])
 					else :
 						aa.append(bossData[i][0])		                     #output_bossData[0] : 보스명
+						nm = bossData[i][0]
 						if bossMungFlag[i] == True :
 							aa.append(tmp_bossTime[i])                       #output_bossData[1] : 시간
 							aa.append(tmp_bossTime[i].strftime('%H:%M:%S'))  #output_bossData[2] : 시간(00:00:00)
-							aa.append('-')	                                 #output_bossData[3] : -
+							if nm == '여왕개미' or nm == '코어수스캡터' or nm == '가레스' or nm == '카탄' or nm == '셀루' or nm == '베히모스' or nm == '메두사' or nm == '티미트리스' or nm == '스탄' or nm == '템페스트' or nm == '바실라' or nm == '켈소스'  :
+								aa.append('-')	                                 #output_bossData[3] : -
+							else :
+								aa.append('+')
 						else :
 							aa.append(bossTime[i])                           #output_bossData[1] : 시간
 							aa.append(bossTime[i].strftime('%H:%M:%S'))      #output_bossData[2] : 시간(00:00:00)
-							aa.append('+')	                                 #output_bossData[3] : +
+							if nm == '여왕개미' or nm == '코어수스캡터' or nm == '가레스' or nm == '카탄' or nm == '셀루' or nm == '베히모스' or nm == '메두사' or nm == '티미트리스' or nm == '스탄' or nm == '템페스트' or nm == '바실라' or nm == '켈소스'  :
+								aa.append('-')	                                 #output_bossData[3] : -
+							else :
+								aa.append('+')
 						aa.append(bossData[i][2])                            #output_bossData[4] : 멍/미입력 보스
 						aa.append(bossMungCnt[i])	                         #output_bossData[5] : 멍/미입력횟수
 						aa.append(bossData[i][6])	                         #output_bossData[6] : 메세지
 						ouput_bossData.append(aa)
 						aa = []
+						nm = []
 
 				fixed_information = ''								
 				for i in range(fixed_bossNum):
