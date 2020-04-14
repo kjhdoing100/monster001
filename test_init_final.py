@@ -1740,14 +1740,14 @@ while True:
 						if bossMungFlag[i] == True :
 							aa.append(tmp_bossTime[i])                       #output_bossData[1] : 시간
 							aa.append(tmp_bossTime[i].strftime('%H:%M:%S'))  #output_bossData[2] : 시간(00:00:00)
-							if nm == '여왕개미' or nm == '코어수스캡터' or nm == '가레스' or nm == '카탄' or nm == '셀루' or nm == '베히모스' or nm == '메두사' or nm == '티미트리스' or nm == '스탄' or nm == '템페스트' or nm == '바실라' or nm == '켈소스'  :
+							if nm == '여왕개미' or nm == '코어수스켑터' or nm == '가레스' or nm == '카탄' or nm == '셀루' or nm == '베히모스' or nm == '메두사' or nm == '티미트리스' or nm == '스탄' or nm == '템페스트' or nm == '바실라' or nm == '켈소스'  :
 								aa.append('-')	                                 #output_bossData[3] : -
 							else :
 								aa.append('+')
 						else :
 							aa.append(bossTime[i])                           #output_bossData[1] : 시간
 							aa.append(bossTime[i].strftime('%H:%M:%S'))      #output_bossData[2] : 시간(00:00:00)
-							if nm == '여왕개미' or nm == '코어수스캡터' or nm == '가레스' or nm == '카탄' or nm == '셀루' or nm == '베히모스' or nm == '메두사' or nm == '티미트리스' or nm == '스탄' or nm == '템페스트' or nm == '바실라' or nm == '켈소스'  :
+							if nm == '여왕개미' or nm == '코어수스터' or nm == '가레스' or nm == '카탄' or nm == '셀루' or nm == '베히모스' or nm == '메두사' or nm == '티미트리스' or nm == '스탄' or nm == '템페스트' or nm == '바실라' or nm == '켈소스'  :
 								aa.append('-')	                                 #output_bossData[3] : -
 							else :
 								aa.append('+')
